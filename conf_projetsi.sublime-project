@@ -1,0 +1,36 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"python\" -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"anaconda_linting": true,
+		"anaconda_linting_behaviour": "always",
+		"autopep8": true,
+		"enable_signatures_tooltip": true,
+		"merge_signatures_and_doc": true,
+		"pep257": false,
+		"pep8": true,
+		"pep8_ignore":
+		[
+			"E501"
+		],
+		"tab_size": 4,
+		"test_command": "python -m unittest discover",
+		"translate_tabs_to_spaces": true,
+		"use_pylint": true,
+		"validate_imports": true
+	}
+}
